@@ -378,3 +378,62 @@ body {
     .contenedor-menu { flex-wrap: wrap; }
     .cv-link { order: -1; margin-bottom: 10px; width: 100%; text-align: center; }
 }
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(-45deg,#0f2027,#203a43,#2c5364,#1c92d2);
+    background-size: 400% 400%;
+    animation: fondoAnimado 10s ease infinite;
+}
+
+@keyframes fondoAnimado{
+    0%{
+        background-position:0% 50%;
+    }
+    50%{
+        background-position:100% 50%;
+    }
+    100%{
+        background-position:0% 50%;
+    }
+}
+.contenedor-foto {
+    display: flex;            /* Activa Flexbox */
+    justify-content: center;  /* Centra horizontalmente */
+    align-items: center;      /* Centra verticalmente */
+    width: 100%;              /* Ocupa todo el ancho disponible */
+    padding: 20px 0;          /* Un poco de aire arriba y abajo */
+}
+
+.foto {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 4px solid white;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.4);
+    transition: transform 0.4s;
+    object-fit: cover;        /* ¡Crucial para que no se vea estirada! */
+}
+
+.foto:hover {
+    transform: scale(1.1);
+}
+/* --- FONDO ANIMADO PROFESIONAL --- */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    color: #e0e7ff;
+    /* Fondo con degradado de 4 colores que se mueve */
+    background: linear-gradient(-45deg, #000a12, #1a273b, #2c5364, #000a12);
+    background-size: 400% 400%;
+    animation: fondoAnimado 15s ease infinite;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+@keyframes fondoAnimado {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}

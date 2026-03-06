@@ -32,6 +32,10 @@
         </div>
     </header>
 
+    <div class="contenedor-foto">
+        <img src="img/proyectos/fabs.jpeg" alt="Fabiana Huertas" class="foto">
+    </div>
+
     <main class="contenedor">
         <section id="sobre-mi" class="seccion">
             <h2 class="titulo-seccion">System.AboutMe</h2>
@@ -187,6 +191,38 @@
     </div>
 </section>
 
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    
+    <script>
+        // Typed.js
+        var typed = new Typed('#typed-text', {
+            strings: ['<strong>Desarrolladora Web.</strong>^1000 <br><br> Soy estudiante de Ingeniería de Sistemas, interesada en el desarrollo de software y la creación de soluciones tecnológicas.'],
+            typeSpeed: 30,
+            showCursor: true,
+            cursorChar: '_',
+            loop: false
+        });
+
+        // Configuración de Particles.js
+        particlesJS("particles-js", {
+            "particles": {
+                "number": { "value": 80, "density": { "enable": true, "value_area": 800 } },
+                "color": { "value": "#00F5FF" },
+                "shape": { "type": "circle" },
+                "opacity": { "value": 0.5, "random": true },
+                "size": { "value": 3, "random": true },
+                "line_linked": { "enable": true, "distance": 150, "color": "#FF3E96", "opacity": 0.4, "width": 1 },
+                "move": { "enable": true, "speed": 3, "direction": "none", "random": false, "straight": false, "out_mode": "out" }
+            },
+            "interactivity": {
+                "events": { "onhover": { "enable": true, "mode": "grab" } },
+                "modes": { "grab": { "distance": 140, "line_linked": { "opacity": 1 } } }
+            },
+            "retina_detect": true
+        });
+    </script>
+    
 </section>
     </main>
 
